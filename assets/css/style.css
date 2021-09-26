@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header {
+  background-color: #0b486b;
+  padding: 13px;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  height: 20%;
+}
+
+
+
+.sidebar {
+    width: 20%;
+    float: left;
+  	height: 520px; 
+  	background: #3b8686;
+  	padding: 5px;
+	text-align: left;
+	padding-left: 20px;
+	font-size: 15pt;
+	
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.sidebar li a {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+	color: #fff;
+}
+
+.sidebar li a:hover {
+    background-color: #006A80;
+}
+
+.sidebar li a.active{
+    background-color: #FBF100;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 520px; /* only for demonstration, should be removed */
+}
+.article a{
+	color: #151515;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*tambahan*/
+.circle { 
+    width: 50px;
+    height: 50px;
+    background-color: #40a977;
+    border-radius: 50%;
+    float: left;
+	}
+article2 {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 535px;
+}
+
+.form{
+    background: #3b8686;
+    border-radius: 5px;
+    padding: 4px 20px 15px 20px;
+    box-shadow: 0px 0px 5px black;
+    color: #FFF;
+    margin: 0 auto;
+    width: 430px;
+}
+
+.form-control:focus {
+    border-color: #000;
+    box-shadow: none;
+}
+
+label {
+    font-weight: 600;
+}
+
+.error {
+    color: red;
+    font-weight: 400;
+    display: block;
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.form-control.error {
+    border-color: red;
+    padding: .375rem .75rem;
+}
+
+.buku-cover {
+    max-width: 50px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    font-size: medium;
+}
+
+.scollbox{
+     display:block;
+     border: 1px solid grey;
+     padding:3px;
+     margin-top:3px;
+     width:100%;
+     height:390px;
+     overflow:auto;
+}
+.content {
+    width: 80%;
+    min-height: 600px;
+    float: right;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #FFF;
+    border-radius: 5px;
+    color: #2c3e50;
+}
+
+.btn {
+    width: auto;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.btn-submit {
+    background-color: #C35045;
+}
